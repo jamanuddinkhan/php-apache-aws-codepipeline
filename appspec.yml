@@ -5,10 +5,6 @@ files:
     destination: /var/www/test/
     overwrite: true
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
   AfterInstall:
     - location: scripts/deploy_laravel.sh
       timeout: 300
