@@ -9,3 +9,10 @@ hooks:
     - location: scripts/change_permissions.sh
       timeout: 300
       runas: root
+
+  ApplicationStart:
+      timeout: 120
+      runas: root    
+  ApplicationStop:
+      timeout: 120
+      runas: root
