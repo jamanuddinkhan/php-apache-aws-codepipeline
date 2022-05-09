@@ -6,9 +6,6 @@ files:
     overwrite: true
 hooks:
   AfterInstall:
-    - location: scripts/deploy_laravel.sh
-      timeout: 300
-      runas: root
     - location: scripts/change_permissions.sh
       timeout: 300
       runas: root
