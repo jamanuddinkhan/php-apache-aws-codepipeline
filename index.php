@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>PHP - Codepipeline</h1>
-
 <?php
-echo "Hello World!";
-?> 
+require 'vendor/autoload.php';
 
-</body>
-</html>
+use Carbon\Carbon;
+ 
+$date = Carbon::now();
+
+echo $date->toDayDateTimeString();
